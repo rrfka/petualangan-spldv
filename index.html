@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Media pembelajaran interaktif SPLDV dengan petualangan matematika.">
+    <title>Petualangan Menyelesaikan Masalah SPLDV</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">🧭 Petualangan SPLDV</div>
+        <button class="nav-home" onclick="showPage('home')">
+            🏠 Beranda
+        </button>
+    </nav>
+
+    <!-- HALAMAN BERANDA -->
+    <section id="home" class="page active">
+
+        <div class="hero">
+            <div class="hero-content">
+                <span class="tag">✨ MEDIA PEMBELAJARAN MATEMATIKA</span>
+
+                <h1>
+                    Petualangan<br>
+                    Menyelesaikan<br>
+                    Masalah SPLDV
+                </h1>
+
+                <p>
+                    Hai, Petualang! Bersiaplah menjelajahi tiga dunia
+                    penuh tantangan. Pelajari SPLDV, pecahkan teka-teki,
+                    kumpulkan bintang, dan jadilah Master SPLDV!
+                </p>
+
+                <div class="home-buttons">
+                    <button class="btn-primary"
+                        onclick="showPage('materi')">
+                        📚 Pelajari Materi
+                    </button>
+
+                    <button class="btn-secondary"
+                        onclick="showPage('map')">
+                        ⚔️ Mulai Petualangan
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-art">
+                <div class="floating-icon">⭐</div>
+                <div class="floating-icon second">📐</div>
+                <div class="mascot">🧙‍♂️</div>
+                <h2>Halo, Petualang!</h2>
+                <p>Aku MATHO, teman petualanganmu!</p>
+            </div>
+        </div>
+
+        <div class="home-info">
+            <h2>Pilih Petualanganmu!</h2>
+
+            <div class="feature-container">
+
+                <div class="feature-card" onclick="showPage('materi')">
+                    <div class="feature-icon">📖</div>
+                    <h3>Materi Pembelajaran</h3>
+                    <p>Pelajari konsep, metode, dan penerapan SPLDV.</p>
+                    <span>Mulai belajar →</span>
+                </div>
+
+                <div class="feature-card" onclick="showPage('map')">
+                    <div class="feature-icon">🗺️</div>
+                    <h3>Uji Coba</h3>
+                    <p>Taklukkan tantangan matematika dalam tiga dunia.</p>
+                    <span>Mulai bermain →</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HALAMAN MATERI -->
+    <section id="materi" class="page">
+
+        <div class="section-heading">
+            <span class="tag">📚 RUANG BELAJAR</span>
+            <h1>Jelajahi Materi SPLDV</h1>
+            <p>Pelajari setiap konsep sebelum menghadapi tantangan.</p>
+        </div>
+
+        <div class="materi-container">
+
+            <article class="materi-card">
+                <span class="materi-icon">📘</span>
+                <h2>1. Pengertian SPLDV</h2>
+                <p>
+                    Sistem Persamaan Linear Dua Variabel (SPLDV)
+                    adalah sistem yang terdiri atas dua persamaan
+                    linear dengan dua variabel yang sama.
+                </p>
+                <div class="formula">a₁x + b₁y = c₁</div>
+                <div class="formula">a₂x + b₂y = c₂</div>
+            </article>
+
+            <article class="materi-card">
+                <span class="materi-icon">🔍</span>
+                <h2>2. Unsur SPLDV</h2>
+                <p>
+                    SPLDV memiliki variabel, koefisien, dan konstanta.
+                    Variabel merupakan nilai yang belum diketahui,
+                    koefisien merupakan bilangan pengali variabel,
+                    sedangkan konstanta merupakan bilangan tetap.
+                </p>
+                <div class="example">
+                    Contoh: 3x + 2y = 12. Variabelnya x dan y,
+                    koefisiennya 3 dan 2, serta konstantanya 12.
+                </div>
+            </article>
+
+            <article class="materi-card">
+                <span class="materi-icon">📊</span>
+                <h2>3. Metode Grafik</h2>
+                <p>
+                    Metode grafik dilakukan dengan menggambarkan
+                    kedua persamaan pada bidang koordinat.
+                    Titik potong kedua garis merupakan solusi SPLDV.
+                </p>
+            </article>
+
+            <article class="materi-card">
+                <span class="materi-icon">🔄</span>
+                <h2>4. Metode Substitusi</h2>
+                <p>
+                    Metode substitusi dilakukan dengan menyatakan
+                    satu variabel dalam bentuk variabel lainnya,
+                    kemudian menggantikannya ke persamaan kedua.
+                </p>
+                <div class="example">
+                    x + y = 7, jika x = 3, maka y = 7 - 3 = 4.
+                </div>
+            </article>
+
+            <article class="materi-card">
+                <span class="materi-icon">➖</span>
+                <h2>5. Metode Eliminasi</h2>
+                <p>
+                    Metode eliminasi dilakukan dengan menghilangkan
+                    salah satu variabel menggunakan operasi
+                    penjumlahan atau pengurangan.
+                </p>
+                <div class="example">
+                    2x + y = 11<br>
+                    x + y = 7<br>
+                    Dikurangkan menghasilkan x = 4.
+                </div>
+            </article>
+
+            <article class="materi-card">
+                <span class="materi-icon">🧩</span>
+                <h2>6. Metode Gabungan</h2>
+                <p>
+                    Metode gabungan merupakan kombinasi metode
+                    eliminasi dan substitusi untuk mendapatkan
+                    nilai kedua variabel.
+                </p>
+            </article>
+
+            <article class="materi-card">
+                <span class="materi-icon">🛒</span>
+                <h2>7. Penerapan SPLDV</h2>
+                <p>
+                    SPLDV dapat digunakan untuk menyelesaikan
+                    masalah sehari-hari, misalnya menentukan
+                    harga barang, umur, dan jumlah benda.
+                </p>
+            </article>
+
+        </div>
+
+        <button class="btn-primary" onclick="showPage('map')">
+            Siap Menghadapi Tantangan? →
+        </button>
+
+    </section>
+
+    <!-- PETA PETUALANGAN -->
+    <section id="map" class="page">
+
+        <div class="section-heading">
+            <span class="tag">🗺️ PETA MISI</span>
+            <h1>Dunia Petualangan SPLDV</h1>
+            <p>Selesaikan setiap level untuk membuka dunia berikutnya.</p>
+        </div>
+
+        <div class="mascot-message">
+            <div class="small-mascot" aria-hidden="true">🧙‍♂️</div>
+
+            <div>
+                <strong>MATHO berkata:</strong>
+                <p id="mascotMessage">
+                    Ayo mulai petualanganmu! Kita pasti bisa!
+                </p>
+            </div>
+        </div>
+
+        <div class="score-panel">
+            <div>⭐ Bintang: <strong id="totalStars">0</strong></div>
+            <div>🏆 Skor: <strong id="totalScore">0</strong></div>
+            <div>🎯 Selesai: <strong id="completedCount">0/12</strong></div>
+        </div>
+
+        <div id="levelMap" class="adventure-map"></div>
+
+        <p class="map-note">
+            ⭐ Level hijau = selesai · 🟡 Level kuning = tersedia ·
+            🔒 Level abu-abu = terkunci
+        </p>
+
+        <button class="reset-button" onclick="resetProgress()">
+            Reset Progres Permainan
+        </button>
+
+    </section>
+
+    <!-- HALAMAN PERMAINAN -->
+    <section id="game" class="page">
+
+        <div class="game-container">
+
+            <div class="game-top">
+                <button class="back-button" onclick="showPage('map')">
+                    ← Peta
+                </button>
+
+                <strong id="gameLevel">LEVEL 1</strong>
+
+                <div class="lives">
+                    ❤️ <span id="lifeCount">5</span>
+                </div>
+            </div>
+
+            <div id="gameStars" aria-live="polite">⭐ 0</div>
+
+            <div class="game-progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <div class="question-card">
+
+                <span class="tag" id="difficulty">MUDAH</span>
+
+                <h2 id="questionTitle">Tantangan SPLDV</h2>
+
+                <div class="character-tip">
+                    🧙‍♂️
+                    <span id="hintText">
+                        Pilih jawaban terbaik untuk menyelesaikan misi!
+                    </span>
+                </div>
+
+                <p id="questionText"></p>
+
+                <div id="options" class="options-container"></div>
+
+                <div id="feedback" class="feedback"></div>
+
+                <button id="hintButton" class="hint-button"
+                    onclick="showHint()">
+                    💡 Minta Petunjuk
+                </button>
+
+                <button id="checkButton" class="btn-primary"
+                    onclick="checkAnswer()">
+                    Periksa Jawaban
+                </button>
+
+                <button id="nextButton" class="btn-secondary hidden"
+                    onclick="nextLevel()">
+                    Lanjutkan →
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HALAMAN HASIL -->
+    <section id="result" class="page">
+
+        <div class="result-card">
+            <div class="result-icon">🏆</div>
+
+            <h1>Petualangan Berhasil!</h1>
+
+            <p id="resultMessage">
+                Kamu berhasil menyelesaikan tantangan.
+            </p>
+
+            <h2 id="resultStars">⭐⭐⭐</h2>
+
+            <h3 id="resultScore">Skor: 100</h3>
+
+            <button class="btn-primary" onclick="showPage('map')">
+                Kembali ke Peta
+            </button>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Petualangan Menyelesaikan Masalah SPLDV</p>
+        <p>Media Pembelajaran Matematika Berbasis Website</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
