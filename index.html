@@ -39,13 +39,11 @@
                 </p>
 
                 <div class="home-buttons">
-                    <button class="btn-primary"
-                        onclick="showPage('materi')">
+                    <button class="btn-primary" onclick="showPage('materi')">
                         📚 Pelajari Materi
                     </button>
 
-                    <button class="btn-secondary"
-                        onclick="showPage('map')">
+                    <button class="btn-secondary" onclick="showPage('map')">
                         ⚔️ Mulai Petualangan
                     </button>
                 </div>
@@ -81,6 +79,7 @@
 
             </div>
         </div>
+
     </section>
 
     <!-- HALAMAN MATERI -->
@@ -89,101 +88,396 @@
         <div class="section-heading">
             <span class="tag">📚 RUANG BELAJAR</span>
             <h1>Jelajahi Materi SPLDV</h1>
-            <p>Pelajari setiap konsep sebelum menghadapi tantangan.</p>
+            <p>
+                Kenali konsep, pelajari metode penyelesaian, dan temukan
+                penerapan SPLDV dalam kehidupan sehari-hari.
+            </p>
         </div>
 
         <div class="materi-container">
 
+            <!-- 1. KONSEP SPLDV -->
             <article class="materi-card">
                 <span class="materi-icon">📘</span>
-                <h2>1. Pengertian SPLDV</h2>
+                <h2>1. Konsep Sistem Persamaan Linear Dua Variabel</h2>
+
+                <p>
+                    Persamaan Linear Dua Variabel (PLDV) merupakan
+                    persamaan yang memiliki dua variabel dengan
+                    masing-masing variabel berpangkat satu.
+                </p>
+
                 <p>
                     Sistem Persamaan Linear Dua Variabel (SPLDV)
-                    adalah sistem yang terdiri atas dua persamaan
-                    linear dengan dua variabel yang sama.
+                    adalah sistem yang terdiri atas dua atau lebih
+                    persamaan linear dua variabel yang saling berkaitan
+                    dan memiliki variabel yang sama.
                 </p>
+
+                <h3>Bentuk Umum SPLDV</h3>
+
                 <div class="formula">a₁x + b₁y = c₁</div>
                 <div class="formula">a₂x + b₂y = c₂</div>
-            </article>
 
-            <article class="materi-card">
-                <span class="materi-icon">🔍</span>
-                <h2>2. Unsur SPLDV</h2>
-                <p>
-                    SPLDV memiliki variabel, koefisien, dan konstanta.
-                    Variabel merupakan nilai yang belum diketahui,
-                    koefisien merupakan bilangan pengali variabel,
-                    sedangkan konstanta merupakan bilangan tetap.
-                </p>
+                <p>Keterangan:</p>
+                <ul>
+                    <li><b>x dan y</b> = variabel atau nilai yang belum diketahui.</li>
+                    <li><b>a₁, a₂, b₁, dan b₂</b> = koefisien.</li>
+                    <li><b>c₁ dan c₂</b> = konstanta.</li>
+                </ul>
+
                 <div class="example">
-                    Contoh: 3x + 2y = 12. Variabelnya x dan y,
-                    koefisiennya 3 dan 2, serta konstantanya 12.
+                    <b>Contoh:</b><br>
+                    2x + 3y = 12<br>
+                    x + 2y = 7
+
+                    <p>
+                        Kedua persamaan tersebut membentuk SPLDV karena
+                        memiliki dua variabel yang sama, yaitu x dan y.
+                    </p>
                 </div>
             </article>
 
-            <article class="materi-card">
-                <span class="materi-icon">📊</span>
-                <h2>3. Metode Grafik</h2>
-                <p>
-                    Metode grafik dilakukan dengan menggambarkan
-                    kedua persamaan pada bidang koordinat.
-                    Titik potong kedua garis merupakan solusi SPLDV.
-                </p>
-            </article>
-
-            <article class="materi-card">
-                <span class="materi-icon">🔄</span>
-                <h2>4. Metode Substitusi</h2>
-                <p>
-                    Metode substitusi dilakukan dengan menyatakan
-                    satu variabel dalam bentuk variabel lainnya,
-                    kemudian menggantikannya ke persamaan kedua.
-                </p>
-                <div class="example">
-                    x + y = 7, jika x = 3, maka y = 7 - 3 = 4.
-                </div>
-            </article>
-
+            <!-- 2. METODE ELIMINASI -->
             <article class="materi-card">
                 <span class="materi-icon">➖</span>
-                <h2>5. Metode Eliminasi</h2>
+                <h2>2. Metode Eliminasi</h2>
+
                 <p>
-                    Metode eliminasi dilakukan dengan menghilangkan
-                    salah satu variabel menggunakan operasi
-                    penjumlahan atau pengurangan.
+                    Metode eliminasi merupakan cara menyelesaikan SPLDV
+                    dengan menghilangkan salah satu variabel melalui
+                    operasi penjumlahan atau pengurangan kedua persamaan.
                 </p>
+
+                <h3>Langkah-langkah Penyelesaian</h3>
+
+                <ol>
+                    <li>Tuliskan kedua persamaan yang diketahui.</li>
+                    <li>Pilih salah satu variabel yang akan dihilangkan.</li>
+                    <li>Samakan koefisien variabel yang akan dieliminasi.</li>
+                    <li>Jumlahkan atau kurangkan kedua persamaan.</li>
+                    <li>Tentukan nilai variabel yang tersisa.</li>
+                    <li>Substitusikan nilai tersebut untuk memperoleh variabel lainnya.</li>
+                </ol>
+
                 <div class="example">
-                    2x + y = 11<br>
-                    x + y = 7<br>
-                    Dikurangkan menghasilkan x = 4.
+                    <b>Contoh soal:</b>
+
+                    <p>Diketahui persamaan:</p>
+
+                    <div class="formula">2x + y = 7 ... (1)</div>
+                    <div class="formula">x + y = 5 ... (2)</div>
+
+                    <b>Penyelesaian:</b>
+
+                    <p>Eliminasi variabel y dengan mengurangkan persamaan (1) dan (2).</p>
+
+                    <div class="formula">
+                        2x + y = 7<br>
+                        x + y = 5<br>
+                        ---------------- −<br>
+                        x = 2
+                    </div>
+
+                    <p>Substitusikan x = 2 ke persamaan (2).</p>
+
+                    <div class="formula">
+                        2 + y = 5<br>
+                        y = 5 − 2<br>
+                        y = 3
+                    </div>
+
+                    <p>
+                        Jadi, diperoleh penyelesaian x = 2 dan y = 3,
+                        sehingga pasangan penyelesaiannya adalah (2, 3).
+                    </p>
                 </div>
             </article>
 
+            <!-- 3. METODE SUBSTITUSI -->
             <article class="materi-card">
-                <span class="materi-icon">🧩</span>
-                <h2>6. Metode Gabungan</h2>
+                <span class="materi-icon">🔄</span>
+                <h2>3. Metode Substitusi</h2>
+
                 <p>
-                    Metode gabungan merupakan kombinasi metode
-                    eliminasi dan substitusi untuk mendapatkan
-                    nilai kedua variabel.
+                    Metode substitusi merupakan metode penyelesaian SPLDV
+                    dengan menyatakan salah satu variabel dalam bentuk
+                    variabel lainnya, kemudian menggantikan bentuk tersebut
+                    ke persamaan yang lain.
                 </p>
+
+                <h3>Langkah-langkah Penyelesaian</h3>
+
+                <ol>
+                    <li>Pilih salah satu persamaan.</li>
+                    <li>Nyatakan salah satu variabel dalam bentuk variabel lainnya.</li>
+                    <li>Substitusikan bentuk variabel tersebut ke persamaan kedua.</li>
+                    <li>Selesaikan persamaan untuk memperoleh nilai satu variabel.</li>
+                    <li>Substitusikan kembali untuk menentukan nilai variabel lainnya.</li>
+                </ol>
+
+                <div class="example">
+                    <b>Contoh soal:</b>
+
+                    <p>Diketahui persamaan:</p>
+
+                    <div class="formula">x + y = 7 ... (1)</div>
+                    <div class="formula">2x + y = 11 ... (2)</div>
+
+                    <b>Penyelesaian:</b>
+
+                    <p>Dari persamaan (1), diperoleh:</p>
+
+                    <div class="formula">y = 7 − x</div>
+
+                    <p>Substitusikan ke persamaan (2).</p>
+
+                    <div class="formula">
+                        2x + (7 − x) = 11<br>
+                        2x + 7 − x = 11<br>
+                        x + 7 = 11<br>
+                        x = 4
+                    </div>
+
+                    <p>Substitusikan x = 4 ke persamaan (1).</p>
+
+                    <div class="formula">
+                        4 + y = 7<br>
+                        y = 3
+                    </div>
+
+                    <p>
+                        Jadi, diperoleh x = 4 dan y = 3,
+                        sehingga pasangan penyelesaiannya adalah (4, 3).
+                    </p>
+                </div>
             </article>
 
+            <!-- 4. METODE GABUNGAN -->
+            <article class="materi-card">
+                <span class="materi-icon">🧩</span>
+                <h2>4. Metode Gabungan</h2>
+
+                <p>
+                    Metode gabungan merupakan metode penyelesaian SPLDV
+                    yang mengombinasikan metode eliminasi dan substitusi.
+                    Metode ini dilakukan dengan mengeliminasi salah satu
+                    variabel terlebih dahulu, kemudian menggunakan
+                    substitusi untuk menentukan variabel lainnya.
+                </p>
+
+                <h3>Langkah-langkah Penyelesaian</h3>
+
+                <ol>
+                    <li>Tuliskan kedua persamaan yang diketahui.</li>
+                    <li>Gunakan metode eliminasi untuk memperoleh nilai salah satu variabel.</li>
+                    <li>Substitusikan nilai yang diperoleh ke salah satu persamaan.</li>
+                    <li>Tentukan nilai variabel lainnya.</li>
+                </ol>
+
+                <div class="example">
+                    <b>Contoh soal:</b>
+
+                    <p>Diketahui persamaan:</p>
+
+                    <div class="formula">2x + y = 7 ... (1)</div>
+                    <div class="formula">x + y = 5 ... (2)</div>
+
+                    <b>Penyelesaian:</b>
+
+                    <p>
+                        Langkah pertama, eliminasi variabel y dengan
+                        mengurangkan persamaan (1) dan (2).
+                    </p>
+
+                    <div class="formula">
+                        2x + y = 7<br>
+                        x + y = 5<br>
+                        ---------------- −<br>
+                        x = 2
+                    </div>
+
+                    <p>
+                        Langkah kedua, substitusikan x = 2 ke persamaan (2).
+                    </p>
+
+                    <div class="formula">
+                        2 + y = 5<br>
+                        y = 3
+                    </div>
+
+                    <p>
+                        Jadi, penyelesaiannya adalah x = 2 dan y = 3,
+                        sehingga pasangan penyelesaiannya adalah (2, 3).
+                    </p>
+                </div>
+            </article>
+
+            <!-- 5. PENERAPAN SPLDV -->
             <article class="materi-card">
                 <span class="materi-icon">🛒</span>
-                <h2>7. Penerapan SPLDV</h2>
+                <h2>5. Penerapan SPLDV dalam Kehidupan Sehari-hari</h2>
+
                 <p>
-                    SPLDV dapat digunakan untuk menyelesaikan
-                    masalah sehari-hari, misalnya menentukan
-                    harga barang, umur, dan jumlah benda.
+                    SPLDV dapat digunakan untuk membantu menyelesaikan
+                    berbagai permasalahan yang melibatkan dua nilai
+                    yang belum diketahui.
                 </p>
+
+                <p>Beberapa contoh penerapannya antara lain:</p>
+
+                <ul>
+                    <li>Menentukan harga dua jenis barang.</li>
+                    <li>Menentukan jumlah anak-anak dan orang dewasa.</li>
+                    <li>Menentukan usia seseorang.</li>
+                    <li>Menentukan jumlah kendaraan berdasarkan jenisnya.</li>
+                    <li>Menentukan jumlah barang yang dibeli.</li>
+                </ul>
+
+                <div class="example">
+                    <b>Contoh soal cerita:</b>
+
+                    <p>
+                        Di sebuah toko, harga 2 buku dan 1 pensil adalah
+                        Rp7.000,00. Sementara itu, harga 1 buku dan
+                        1 pensil adalah Rp4.000,00. Tentukan harga
+                        masing-masing buku dan pensil!
+                    </p>
+
+                    <b>Langkah 1: Menentukan variabel</b>
+
+                    <p>
+                        Misalkan:<br>
+                        x = harga satu buku<br>
+                        y = harga satu pensil
+                    </p>
+
+                    <b>Langkah 2: Membuat model matematika</b>
+
+                    <div class="formula">
+                        2x + y = 7.000<br>
+                        x + y = 4.000
+                    </div>
+
+                    <b>Langkah 3: Menyelesaikan SPLDV</b>
+
+                    <p>Kurangkan kedua persamaan untuk memperoleh x.</p>
+
+                    <div class="formula">
+                        2x + y = 7.000<br>
+                        x + y = 4.000<br>
+                        ---------------- −<br>
+                        x = 3.000
+                    </div>
+
+                    <p>Substitusikan x = 3.000 ke persamaan kedua.</p>
+
+                    <div class="formula">
+                        3.000 + y = 4.000<br>
+                        y = 1.000
+                    </div>
+
+                    <b>Langkah 4: Menuliskan kesimpulan</b>
+
+                    <p>
+                        Jadi, harga satu buku adalah Rp3.000,00
+                        dan harga satu pensil adalah Rp1.000,00.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 6. PROSEDUR SOAL CERITA -->
+            <article class="materi-card">
+                <span class="materi-icon">📝</span>
+                <h2>6. Prosedur Menyelesaikan Masalah SPLDV</h2>
+
+                <p>
+                    Dalam menyelesaikan masalah sehari-hari menggunakan
+                    SPLDV, terdapat beberapa tahapan yang dapat dilakukan.
+                </p>
+
+                <ol>
+                    <li>
+                        <b>Memahami masalah:</b>
+                        identifikasi informasi yang diketahui dan
+                        hal yang ditanyakan.
+                    </li>
+                    <li>
+                        <b>Menentukan variabel:</b>
+                        misalkan dua besaran yang belum diketahui
+                        sebagai x dan y.
+                    </li>
+                    <li>
+                        <b>Membuat model matematika:</b>
+                        ubah informasi dalam soal menjadi dua persamaan linear.
+                    </li>
+                    <li>
+                        <b>Menyelesaikan persamaan:</b>
+                        gunakan metode eliminasi, substitusi, atau gabungan.
+                    </li>
+                    <li>
+                        <b>Menafsirkan hasil:</b>
+                        tuliskan jawaban sesuai konteks permasalahan
+                        beserta satuannya.
+                    </li>
+                </ol>
+            </article>
+
+            <!-- 7. RANGKUMAN -->
+            <article class="materi-card">
+                <span class="materi-icon">⭐</span>
+                <h2>7. Rangkuman Materi SPLDV</h2>
+
+                <ul>
+                    <li>
+                        SPLDV merupakan sistem yang terdiri atas dua
+                        atau lebih persamaan linear dua variabel
+                        dengan variabel yang sama.
+                    </li>
+                    <li>
+                        Bentuk umum SPLDV adalah
+                        a₁x + b₁y = c₁ dan a₂x + b₂y = c₂.
+                    </li>
+                    <li>
+                        Metode eliminasi dilakukan dengan menghilangkan
+                        salah satu variabel.
+                    </li>
+                    <li>
+                        Metode substitusi dilakukan dengan mengganti
+                        suatu variabel menggunakan bentuk variabel lainnya.
+                    </li>
+                    <li>
+                        Metode gabungan menggunakan eliminasi dan substitusi.
+                    </li>
+                    <li>
+                        SPLDV dapat digunakan untuk menyelesaikan
+                        permasalahan sehari-hari.
+                    </li>
+                </ul>
+
+                <div class="example">
+                    <b>Ingat, Petualang!</b>
+                    <p>
+                        Kunci menyelesaikan masalah SPLDV adalah memahami
+                        informasi dalam soal, membentuk persamaan yang tepat,
+                        dan memilih metode penyelesaian yang sesuai.
+                    </p>
+                </div>
             </article>
 
         </div>
 
-        <button class="btn-primary" onclick="showPage('map')">
-            Siap Menghadapi Tantangan? →
-        </button>
+        <div class="materi-footer">
+            <h2>Siap Menguji Pemahamanmu?</h2>
+            <p>
+                Setelah mempelajari materi, sekarang waktunya
+                membantu MATHO menyelesaikan berbagai tantangan SPLDV!
+            </p>
+
+            <button class="btn-primary" onclick="showPage('map')">
+                ⚔️ Mulai Petualangan →
+            </button>
+        </div>
 
     </section>
 
@@ -239,7 +533,7 @@
                 <strong id="gameLevel">LEVEL 1</strong>
 
                 <div class="lives">
-                    ❤️ <span id="lifeCount">5</span>
+                    ❤️ <span id="lifeCount">3</span>
                 </div>
             </div>
 
@@ -286,6 +580,7 @@
             </div>
 
         </div>
+
     </section>
 
     <!-- HALAMAN HASIL -->
